@@ -4,8 +4,10 @@
     "description": "🌟 A boilerplate for React projects.",
     "main": "index.js",
     "scripts": {
-        "start": "webpack-dev-server --hot --mode development",
-        "build": "webpack --mode production",
+        "start":
+            "webpack-dev-server --hot --mode development ./src/index.js --output ./dist/main.js --watch",
+        "build":
+            "webpack --mode production ./src/index.js --output ./dist/main.js --watch",
         "test": "jest --config=jest.config.json"
     },
     "repository": {
