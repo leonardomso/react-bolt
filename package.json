@@ -4,11 +4,12 @@
     "description": "🌟 A boilerplate for React projects.",
     "main": "index.js",
     "scripts": {
-        "start":
-            "webpack-dev-server --hot --mode development ./src/index.js --output ./dist/main.js --watch",
-        "build":
-            "webpack --mode production ./src/index.js --output ./dist/main.js --watch",
-        "test": "jest --config=jest.config.json"
+        "start": "webpack-dev-server --hot --mode development ./src/index.js --output ./dist/main.js --watch",
+        "build": "babel src/ -d lib/",
+        "test": "jest --coverage --config=jest.config.json",
+        "test:watch": "jest --watch --coverage",
+        "prepublish": "npm run build",
+        "flow": "flow"
     },
     "repository": {
         "type": "git",
@@ -24,12 +25,14 @@
     "dependencies": {
         "autoprefixer": "^8.6.3",
         "axios": "^0.18.0",
+        "babel-cli": "^6.26.0",
         "babel-core": "^6.26.3",
         "babel-jest": "^23.2.0",
         "babel-loader": "^7.1.4",
         "babel-plugin-transform-class-properties": "^6.24.1",
         "babel-plugin-transform-object-rest-spread": "^6.26.0",
         "babel-preset-env": "^1.7.0",
+        "babel-preset-flow": "^6.23.0",
         "babel-preset-react": "^6.24.1",
         "clean-webpack-plugin": "^0.1.19",
         "css-loader": "^0.28.11",
@@ -61,6 +64,7 @@
         "redux-thunk": "^2.3.0",
         "sass-loader": "^7.0.3",
         "style-loader": "^0.21.0",
+        "styled-components": "^3.3.3",
         "stylelint": "^9.3.0",
         "stylelint-config-recommended": "^2.1.0",
         "stylelint-webpack-plugin": "^0.10.5",
@@ -69,5 +73,8 @@
         "webpack-dev-server": "^3.1.4",
         "webpack-jarvis": "^0.3.2",
         "webpack-md5-hash": "0.0.6"
+    },
+    "devDependencies": {
+        "flow-bin": "^0.75.0"
     }
 }
