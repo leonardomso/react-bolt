@@ -4,7 +4,8 @@
     "description": "🌟 A boilerplate for React projects.",
     "main": "index.js",
     "scripts": {
-        "start": "webpack-dev-server --hot --mode development ./src/index.js --output ./dist/main.js --watch",
+        "start":
+            "webpack-dev-server --hot --mode development ./src/index.js --output ./dist/main.js --watch",
         "build": "babel src/ -d lib/",
         "test": "jest --coverage --config=jest.config.json",
         "test:watch": "jest --watch --coverage",
