@@ -1,8 +1,14 @@
-# Starboy Boilerplate
+<div align="center">
+<h1>Starboy Boilerplate</h1>
 
-[![N|Solid](http://fontid.co/?qa=image&qa_blobid=3386929189661366910)](https://nodesource.com/products/nsolid)
+<a href="https://www.emojione.com/emoji/1f410">
+<img height="300" width="1000" alt="starboy boilerplate logo" src="https://i.imgur.com/5rjo9JB.png" />
+</a>
 
-Starboy is a modern and simple boilerplate for React projects.
+<p>A boilerplate for your React projects.</p>
+</div>
+
+<hr />
 
 ## Getting Started
 
