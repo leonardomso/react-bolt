@@ -1,7 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 const Jarvis = require('webpack-jarvis');
@@ -29,22 +28,18 @@ module.exports = {
                 }
             },
             {
-                test: /\.scss$/,
+                test: /\.(png|jpg|gif)$/,
                 use: [
-                    'style-loader',
-                    MiniCssExtractPlugin.loader,
-                    'css-loader',
-                    'postcss-loader',
-                    'sass-loader'
+                    {
+                        loader: 'file-loader',
+                        options: {}
+                    }
                 ]
             }
         ]
     },
     plugins: [
         new CleanWebpackPlugin('dist', {}),
-        new MiniCssExtractPlugin({
-            filename: 'style.[contenthash].css'
-        }),
         new HtmlWebpackPlugin({
             inject: false,
             hash: true,
