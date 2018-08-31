@@ -1,12 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
-import logo from '../images/starboyblogo.png';
+import Button from './button/';
 
-const Header = styled.div`
-    background-image: url(${logo});
-    width: 910px;
-    height: 260px;
+const Wrapper = styled.section`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: black;
 `;
 
 const SubTitle = styled.h1`
@@ -14,27 +18,23 @@ const SubTitle = styled.h1`
     text-align: center;
     color: white;
     font-family: sans-serif;
+    margin-top: ${props => props.marginTop || '0'};
 `;
 
-const Wrapper = styled.section`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 4em;
-    background: black;
-`;
-
-class App extends Component {
-    render() {
-        return (
-            <Wrapper>
-                <SubTitle>Thanks for downloading!</SubTitle>
-            </Wrapper>
-        );
-    }
-}
+const App = () => (
+    <Wrapper>
+        <SubTitle>Thanks for downloading the boilerplate!</SubTitle>
+        <SubTitle marginTop="20px">Feel free to contribute.</SubTitle>
+        <Button
+            width="110px"
+            height="40px"
+            border="none"
+            borderRadius="30px"
+            marginTop="20px"
+        >
+            Thanks
+        </Button>
+    </Wrapper>
+);
 
 export default App;
