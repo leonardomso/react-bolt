@@ -5,7 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { injectGlobal } from 'styled-components';
 
 import store from './store/store';
-import App from './components/app';
+import App from './components/App';
 
 injectGlobal`
     html {
