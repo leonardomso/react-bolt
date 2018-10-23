@@ -1,49 +1,51 @@
-<div align="center">
-<h1 align="center">Starboy Boilerplate</h1>
 
-<a href="https://www.emojione.com/emoji/1f410">
-<img height="300" width="1000" alt="starboy boilerplate logo" src="https://i.imgur.com/5rjo9JB.png" />
-</a>
+<h1 align="center">
+<br>
+  <a href="https://github.com/leonardomso/33"><img src="https://i.imgur.com/GpQk5wG.png" alt="33 Concepts Every JS Developer Should Know" width=200"></a>
+  <br>
+    <br>
+  React Bolt
+</h1>
 
-<p align="center">A boilerplate for your React projects.</p>
-</div>
+<p align="center">The best boilerplate for your React projects.</p>
 
-<hr />
-
-# Getting Started
-
-```sh
-$ git clone https://github.com/leonardomso/starboy-boilerplate
-$ cd starboy-boilerplate
-$ npm install
-$ npm start
-```
-
-# Features
-
-The boilerplate comes with the following features:
-
-| **Tech** | **Description** |**Learn More**|
-|----------|-------|---|
-|  [React](https://facebook.github.io/react/)  |   A JavaScript library for building user interfaces.   | [Documentation](https://reactjs.org/)  |
-|  [Redux](http://redux.js.org) |  A predictable state container for JavaScript apps.| [Documentation](https://redux.js.org/)|
-|  [React Router](https://reacttraining.com/react-router/web/guides/philosophy) | Declarative routing for your app. | [Documentation](https://reacttraining.com/react-router/web/guides/philosophy) |
-|  [Styled Components](https://www.styled-components.com/) |  Use the best bits of ES6 and CSS to style your apps without stress.     | [Documentation](https://www.styled-components.com/)|
-|  [Webpack](https://webpack.js.org/) |  Static module bundler for modern JavaScript applications.     | [Documentation](https://webpack.js.org/)|
-| [Babel](https://webpack.js.org) | A JavaScript compiler, turns ES6 to ES5. Use next generation JavaScript, today.| [Documentation](https://babeljs.io/)|
-| [Flow](https://flow.org/) | A static type checker for JavaScript.| [Documentation](https://flow.org/)|
-| [ESLint](https://eslint.org/) | Pluggable linting utility for JavaScript.| [Documentation](https://eslint.org/)|
-| [Jest](https://jestjs.io/) | Unit Testing framework for your React project. | [Documentation](https://jestjs.io/)|
-| [Enzyme](https://github.com/airbnb/enzyme) | Testing utilities for React. | [Documentation](https://github.com/airbnb/enzyme)| 
-| [Redux Thunk](https://github.com/reduxjs/redux-thunk)| Popular middleware used to handle asynchronous actions in Redux.| [Documentation](https://github.com/reduxjs/redux-thunk) |
-| [Redux Logger](https://github.com/evgenyrodionov/redux-logger) | A Redux logging tool that lets you replay problems as if they happened in your own browser. | [Documentation](https://github.com/evgenyrodionov/redux-logger)|
-| [Stylelint](https://github.com/stylelint/stylelint) | A mighty, modern CSS linter. |[Documentation](https://github.com/stylelint/stylelint) |
-[Postcss](https://github.com/postcss/postcss) | Transforming styles with JS plugins. | [Documentation](https://github.com/postcss/postcss) |
+<p align="center">
+  <a href="http://makeapullrequest.com">
+    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome">
+  </a>
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="License MIT">
+  </a>
+  <a href="https://travis-ci.org/leonardomso/33-js-concepts">
+    <img src="https://travis-ci.com/leonardomso/33-js-concepts.svg?branch=master" alt="Build Status">
+  </a>
+</p>
 
 <hr />
 
+## Introduction
 
-License
-----
+This repository was created with the intention of helping developers master their concepts in JavaScript. It is not a requirement, but a guide for future studies. It is based on an article written by [Stephen Curtis](https://twitter.com/stephenthecurt) and you can read it [here](https://medium.com/@stephenthecurt/33-fundamentals-every-javascript-developer-should-know-13dd720a90d1). Feel free to contribute.
 
-MIT
+## Features
+
+This boilerplate features all the latest tools and practices in the industry.
+
+- _React_ - 16.5,
+- _State_ - Redux
+- _Babel_ - ES6, ESNext, Airbnb and React/Recommended config
+- _Webpack_ - Hot Reloading, Code Splitting, Optimized Prod Build and more
+- _Tests_ - Jest, React Testing Library & Cypress  = :heart:
+- _Lint_ - ESlint
+
+## Getting stared
+
+1. Clone this repo using `https://github.com/leonardomso/react-bolt.git`
+2. Move to the appropriate directory: `cd react-bolt`.<br />
+3. Run `yarn` or `npm install` to install dependencies.<br />
+4. Run `npm start` to see the example app at `http://localhost:8080`.
+
+
+## License
+
+MIT license, Copyright (c) 2018 Leonardo Maldonado.
