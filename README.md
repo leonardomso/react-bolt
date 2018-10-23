@@ -1,7 +1,7 @@
 
 <h1 align="center">
 <br>
-  <a href="https://github.com/leonardomso/33"><img src="https://i.imgur.com/GpQk5wG.png" alt="33 Concepts Every JS Developer Should Know" width=200"></a>
+  <a href="https://github.com/leonardomso/react-bolt"><img src="https://i.imgur.com/GpQk5wG.png" alt="React Bolt" width=200"></a>
   <br>
     <br>
   React Bolt
@@ -25,20 +25,20 @@
 
 ## Introduction
 
-This repository was created with the intention of helping developers master their concepts in JavaScript. It is not a requirement, but a guide for future studies. It is based on an article written by [Stephen Curtis](https://twitter.com/stephenthecurt) and you can read it [here](https://medium.com/@stephenthecurt/33-fundamentals-every-javascript-developer-should-know-13dd720a90d1). Feel free to contribute.
+This boilerplate contains all you need to start your next React.js project. Simple, robust, well-organized, all you need to do is clone, install and you're ready to start.
 
 ## Features
 
 This boilerplate features all the latest tools and practices in the industry.
 
-- _React_ - 16.5,
+- _React_ - 16.5
 - _State_ - Redux
-- _Babel_ - ES6, ESNext, Airbnb and React/Recommended config
-- _Webpack_ - Hot Reloading, Code Splitting, Optimized Prod Build and more
+- _Babel_ - ES6, Airbnb & React/Recommended config
+- _Webpack_ - Hot Reloading, Code Splitting, Optimized Build
 - _Tests_ - Jest, React Testing Library & Cypress  = :heart:
 - _Lint_ - ESlint
 
-## Getting stared
+## Getting started
 
 1. Clone this repo using `https://github.com/leonardomso/react-bolt.git`
 2. Move to the appropriate directory: `cd react-bolt`.<br />
