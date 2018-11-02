@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Starboy Boilerplate</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="/favicon.ico" />
+    <title>Document</title>
+</head>
+
 <body>
     <div id="root"></div>
-   <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js')
+                .then(function (registration) {
+                    console.log('Service Worker registration successful with scope: ',
+                        registration.scope);
+                })
+                .catch(function (err) {
+                    console.log('Service Worker registration failed: ', err);
+                });
+        }
+    </script>
 </body>
+
 </html>

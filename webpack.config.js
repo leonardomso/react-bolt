@@ -1,59 +1,14 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const WebpackMd5Hash = require('webpack-md5-hash');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const StyleLintPlugin = require('stylelint-webpack-plugin');
-const Jarvis = require('webpack-jarvis');
+require('@babel/register');
+const webpackMerge = require('webpack-merge');
 
-module.exports = {
-    entry: {
-        main: './src/index.js'
-    },
-    output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: '[name].[hash].js'
-    },
-    devtool: 'inline-source-map',
-    devServer: {
-        contentBase: './dist',
-        open: true
-    },
-    module: {
-        rules: [
-            {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                use: {
-                    loader: 'babel-loader'
-                }
-            },
-            {
-                test: /\.(png|jpg|gif)$/,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {}
-                    }
-                ]
-            }
-        ]
-    },
-    plugins: [
-        new CleanWebpackPlugin('dist', {}),
-        new HtmlWebpackPlugin({
-            inject: false,
-            hash: true,
-            template: './src/index.html',
-            filename: 'index.html'
-        }),
-        new WebpackMd5Hash(),
-        new StyleLintPlugin({
-            configFile: './stylelint.config.js',
-            files: './src/scss/*.scss',
-            syntax: 'scss'
-        }),
-        new Jarvis({
-            port: 1337 // optional: set a port
-        })
-    ]
+const common = require('./config/webpack/webpack.common.babel');
+
+const envs = {
+    development: 'dev',
+    production: 'prod'
 };
+
+/* eslint-disable global-require,import/no-dynamic-require */
+const env = envs[process.env.NODE_ENV || 'development'];
+const envConfig = require(`./config/webpack/webpack.${env}.babel`);
+module.exports = webpackMerge(common, envConfig);
