@@ -29,6 +29,12 @@
         "global-require": "off",
         "semi": "warn",
         "arrow-body-style": "off",
-        "no-multiple-empty-lines": ["warn", { "max": 1 }]
+        "no-multiple-empty-lines": ["warn", { "max": 1 }],
+        "no-unused-expressions": [
+            "error",
+            {
+                "allowTaggedTemplates": true
+            }
+        ]
     }
 }
