@@ -19,7 +19,7 @@
         "react",
         "redux",
         "webpack",
-        "sest",
+        "jest",
         "styled-components",
         "starter",
         "boilerplate"
