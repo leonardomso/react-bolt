@@ -88,6 +88,7 @@
         "webpack-merge": "^4.1.4"
     },
     "dependencies": {
+        "cross-env": "^5.2.0",
         "react": "^16.7.0-alpha.0",
         "react-dom": "^16.7.0-alpha.0",
         "react-redux": "^5.1.0",
