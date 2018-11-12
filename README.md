@@ -31,13 +31,14 @@ This boilerplate contains all you need to start your next React.js project. Simp
 
 This boilerplate features all the latest tools and practices in the industry.
 
-- ⚛ **React** 16.5
-- ♻ **Redux** for State Management
-- 🛠 **Babel** for ES6 syntax, Airbnb & React/Recommended config
-- 🚀 **Webpack** (Hot Reloading, Code Splitting, Optimized Build)
-- 💅 **CSS** with Styled Components
-- ✅  **Tests** with Jest, React Testing Library & Cypress
-- 💖  **Lint** - ESlint
+- ⚛ **React** — 16.7.0-alpha.0 with Hooks
+- ♻ **Redux** — State Management
+- 🛠 **Babel** — ES6 syntax, Airbnb & React/Recommended config
+- 🚀 **Webpack**  — Hot Reloading, Code Splitting, Optimized Build
+- 💅 **CSS** — Styled Components
+- ✅  **Tests** — Jest, React Testing Library & Cypress
+- 💖  **Lint** — ESlint
+- 🐶  **Husky** — Prevent bad commits
 
 ## Getting started
 
@@ -45,7 +46,6 @@ This boilerplate features all the latest tools and practices in the industry.
 2. Move to the appropriate directory: `cd react-bolt`.<br />
 3. Run `yarn` or `npm install` to install dependencies.<br />
 4. Run `npm start` to see the example app at `http://localhost:8080`.
-
 
 ## Commands
 
@@ -57,7 +57,6 @@ This boilerplate features all the latest tools and practices in the industry.
 - `npm run test:watch` - run all tests in watch mode
 - `npm run test:cover` - coverage mode
 - `npm run cypress:open` - starts cypress
-
 
 ## License
 
