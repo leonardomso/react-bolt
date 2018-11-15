@@ -1,4 +1,5 @@
 import webpack from 'webpack';
+import Jarvis from 'webpack-jarvis';
 
 import paths from './paths';
 import rules from './rules';
@@ -19,5 +20,10 @@ module.exports = {
         hot: true,
         historyApiFallback: true
     },
-    plugins: [new webpack.HotModuleReplacementPlugin()]
+    plugins: [
+        new webpack.HotModuleReplacementPlugin(),
+        new Jarvis({
+            port: 1337
+        })
+    ]
 };
