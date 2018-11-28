@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import '../css/styles.scss';
+
 const Container = styled.div`
     display: flex;
     align-items: center;
@@ -40,6 +42,7 @@ const App = () => (
                 React Bolt
             </Title>
             <Paragraph>The most simple and robust React boilerplate.</Paragraph>
+            <div className="square" />
         </Wrapper>
     </Container>
 );

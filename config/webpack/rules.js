@@ -7,6 +7,16 @@ module.exports = [
         }
     },
     {
+        test: /\.css$/,
+        exclude: /node_modules/,
+        use: ['style-loader', 'css-loader']
+    },
+    {
+        test: /\.sass$/,
+        exclude: /node_modules/,
+        use: ['style-loader', 'css-loader', 'sass-loader', 'resolve-url-loader']
+    },
+    {
         test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
         exclude: /node_modules/,
         loader: 'file-loader'
