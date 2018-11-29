@@ -22,21 +22,6 @@ module.exports = [
         loader: 'url-loader?limit=10000&mimetype=application/octet-stream'
     },
     {
-        test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-        issuer: {
-            test: /\.jsx?$/
-        },
-        use: [
-            '@svgr/webpack',
-            {
-                loader: 'file-loader',
-                options: {
-                    name: '[path][name]-[hash:8].[ext]'
-                }
-            }
-        ]
-    },
-    {
         test: /\.(jpe?g|png|gif|svg)$/i,
         use: ['url-loader?limit=10000', 'img-loader']
     }
