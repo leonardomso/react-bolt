@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import '../css/styles.scss';
-
 const Container = styled.div`
     display: flex;
     align-items: center;

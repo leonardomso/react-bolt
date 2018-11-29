@@ -14,6 +14,21 @@ module.exports = {
     module: {
         rules
     },
+    performance: {
+        hints: 'warning',
+        maxAssetSize: 450000,
+        maxEntrypointSize: 8500000,
+        assetFilter: assetFilename => {
+            return (
+                assetFilename.endsWith('.css') || assetFilename.endsWith('.js')
+            );
+        }
+    },
+    optimization: {
+        splitChunks: {
+            chunks: 'all'
+        }
+    },
     devServer: {
         contentBase: paths.outputPath,
         compress: true,
