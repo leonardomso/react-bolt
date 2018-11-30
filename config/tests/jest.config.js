@@ -1,6 +1,3 @@
-// Jest configuration
-// https://facebook.github.io/jest/docs/en/configuration.html
-
 module.exports = {
     automock: false,
     browser: false,
