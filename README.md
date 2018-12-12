@@ -62,8 +62,6 @@ This boilerplate features all the latest tools and practices in the industry.
 - [ ] **PWA**: Turn into a PWA boilerplate;
 - [ ] **CSS/Sass support**: Enable CSS/Sass support;
 
-> Which one do you want first? Any other recommendations? Search [existing issues](https://github.com/devhubapp/devhub/issues) or open a new one
-
 ## License
 
 MIT license, Copyright (c) 2018 Leonardo Maldonado.
