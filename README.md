@@ -59,8 +59,10 @@ This boilerplate features all the latest tools and practices in the industry.
 
 ## Next features:
 
-- [ ] **PWA**: Turn into a PWA boilerplate;
+- [ ] **Hot Module Replacement**: Better HMR support;
 - [ ] **CSS/Sass support**: Enable CSS/Sass support;
+- [ ] **PWA**: Turn into a PWA boilerplate;
+- [ ] **SEO**: SEO-ready;
 
 ## License
 
