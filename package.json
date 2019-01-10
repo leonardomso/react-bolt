@@ -9,11 +9,11 @@
         "lint": "eslint ./src/**/**.js",
         "lint:fix": "eslint ./src/**/**.js --fix",
         "test": "jest",
-        "test:watch": "npm run test --watch",
-        "test:cover": "npm run test --coverage",
+        "test:watch": "yarn run test --watch",
+        "test:cover": "yarn run test --coverage",
         "cypress:open": "cypress open",
-        "precommit": "npm run lint && npm test",
-        "prepush": "npm run lint"
+        "precommit": "yarn run lint && yarn test",
+        "prepush": "yarn run lint"
     },
     "keywords": [
         "react",
