@@ -11,9 +11,6 @@ module.exports = {
         path: paths.outputPath,
         chunkFilename: '[name].js'
     },
-    module: {
-        rules
-    },
     performance: {
         hints: 'warning',
         maxAssetSize: 450000,

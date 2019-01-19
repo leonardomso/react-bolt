@@ -10,9 +10,6 @@ module.exports = {
         path: paths.outputPath,
         chunkFilename: '[name].[chunkhash].js'
     },
-    module: {
-        rules
-    },
     plugins: [
         new CleanWebpackPlugin([paths.outputPath.split('/').pop()], {
             root: paths.root
