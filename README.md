@@ -31,7 +31,7 @@ I wrote a article for anyone who wants to learn how to build this boilerplate, i
 This boilerplate features all the latest tools and practices in the industry.
 
 - ⚛ **React** — 16.7.0-alpha.0 with Hooks
-- ♻ **Redux with redux-thunk** — State Management with middleware to handle async requests
+- ♻ **Redux with Redux Thunk** — State Management with middleware to handle async requests
 - 🛠 **Babel** — ES6 syntax, Airbnb & React/Recommended config
 - 🚀 **Webpack**  — Hot Reloading, Code Splitting, Optimized Build
 - 💅 **CSS** — Styled Components
