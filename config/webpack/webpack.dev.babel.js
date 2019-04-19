@@ -2,7 +2,6 @@ import webpack from 'webpack';
 import Jarvis from 'webpack-jarvis';
 
 import paths from './paths';
-import rules from './rules';
 
 module.exports = {
     mode: 'development',
@@ -13,7 +12,7 @@ module.exports = {
     },
     performance: {
         hints: 'warning',
-        maxAssetSize: 450000,
+        maxAssetSize: 20000000,
         maxEntrypointSize: 8500000,
         assetFilter: assetFilename => {
             return (

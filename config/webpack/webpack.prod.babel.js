@@ -1,7 +1,6 @@
 import CleanWebpackPlugin from 'clean-webpack-plugin';
 
 import paths from './paths';
-import rules from './rules';
 
 module.exports = {
     mode: 'production',
