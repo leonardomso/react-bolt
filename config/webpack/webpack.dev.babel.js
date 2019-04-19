@@ -2,7 +2,6 @@ import webpack from 'webpack';
 import Jarvis from 'webpack-jarvis';
 
 import paths from './paths';
-import rules from './rules';
 
 module.exports = {
     mode: 'development',
