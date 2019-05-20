@@ -1,7 +1,8 @@
-const sum = (a, b) => a + b;
+const fullName = (firstName, lastName) => `Hey ${firstName} ${lastName}, this is your first test using Jest!`;
 
 describe('Testing the tests setup', () => {
-    it('Sum 1 + 1 equals 2', () => {
-        expect(sum(1, 1)).toBe(2);
+    it('Should return the full name', () => {
+        const result = `Hey Leonardo Maldonado, this is your first test using Jest!`;
+        expect(fullName("Leonardo", "Maldonado")).toBe(result);
     });
 });
