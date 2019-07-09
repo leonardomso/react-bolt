@@ -26,6 +26,17 @@ module.exports = [
         use: ['url-loader?limit=10000', 'img-loader']
     },
     {
+        test: /\.css$/,
+        use: [
+            {
+                loader: 'style-loader',
+            },
+            {
+                loader: 'css-loader',
+            },
+        ]
+    },
+    {
         test: /\.s(a|c)ss$/,
         use: [
             {
