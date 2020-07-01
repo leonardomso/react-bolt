@@ -1,4 +1,4 @@
-import CleanWebpackPlugin from 'clean-webpack-plugin';
+import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 
 import paths from './paths';
 
@@ -10,9 +10,7 @@ module.exports = {
         chunkFilename: '[name].[chunkhash].js'
     },
     plugins: [
-        new CleanWebpackPlugin([paths.outputPath.split('/').pop()], {
-            root: paths.root
-        })
+        new CleanWebpackPlugin()
     ],
     devtool: 'source-map'
 };
