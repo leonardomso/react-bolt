@@ -59,8 +59,8 @@ This boilerplate features all the latest tools and practices in the industry.
 
 ## Next features:
 
-- [ ] **Hot Module Replacement**: Better HMR support;
-- [ ] **CSS/Sass support**: Enable CSS/Sass support;
+- [x] **Hot Module Replacement**: Better HMR support;
+- [x] **CSS/Sass support**: Enable CSS/Sass support;
 - [ ] **PWA**: Turn into a PWA boilerplate;
 - [ ] **SEO**: SEO-ready;
 
