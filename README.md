@@ -34,7 +34,7 @@ This boilerplate features all the latest tools and practices in the industry.
 - ♻ **Redux with Redux Thunk** — State Management with middleware to handle async requests
 - 🛠 **Babel** — ES6 syntax, Airbnb & React/Recommended config
 - 🚀 **Webpack**  — Hot Reloading, Code Splitting, Optimized Build
-- 💅 **CSS** — Styled Components
+- 💅 **CSS** — Styled Components, CSS, Sass
 - ✅  **Tests** — Jest, React Testing Library & Cypress
 - 💖  **Lint** — ESlint
 - 🐶  **Husky** — Prevent bad commits
