@@ -24,17 +24,19 @@ React Bolt
 
 This boilerplate contains all you need to start your next React.js project. Simple, robust, well-organized, all you need to do is clone, install and you're ready to start.
 
-I wrote a article for anyone who wants to learn how to build this boilerplate, if you want to learn just click [here](linksoon).
+I wrote a article for anyone who wants to learn how to build this boilerplate, if you want to learn just click [here](https://medium.freecodecamp.org/a-complete-react-boilerplate-tutorial-from-zero-to-hero-20023e086c4a).
+
+Check out the lite version [here](https://github.com/dephraiim/react-bolt-lite)
 
 ## Features
 
 This boilerplate features all the latest tools and practices in the industry.
 
-- ⚛ **React** — 16.7.0-alpha.0 with Hooks
+- ⚛ **React** — 16.12.0 with Hooks
 - ♻ **Redux with Redux Thunk** — State Management with middleware to handle async requests
 - 🛠 **Babel** — ES6 syntax, Airbnb & React/Recommended config
 - 🚀 **Webpack**  — Hot Reloading, Code Splitting, Optimized Build
-- 💅 **CSS** — Styled Components
+- 💅 **CSS** — Styled Components, CSS, Sass
 - ✅  **Tests** — Jest, React Testing Library & Cypress
 - 💖  **Lint** — ESlint
 - 🐶  **Husky** — Prevent bad commits
@@ -59,8 +61,8 @@ This boilerplate features all the latest tools and practices in the industry.
 
 ## Next features:
 
-- [ ] **Hot Module Replacement**: Better HMR support;
-- [ ] **CSS/Sass support**: Enable CSS/Sass support;
+- [x] **Hot Module Replacement**: Better HMR support;
+- [x] **CSS/Sass support**: Enable CSS/Sass support;
 - [ ] **PWA**: Turn into a PWA boilerplate;
 - [ ] **SEO**: SEO-ready;
 
