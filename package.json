@@ -72,7 +72,7 @@
         "img-loader": "^3.0.1",
         "jest": "^24.9.0",
         "jest-dom": "^4.0.0",
-        "node-sass": "^4.13.0",
+        "node-sass": "^4.13.1",
         "postcss-loader": "^3.0.0",
         "prettier": "^1.19.1",
         "react-testing-library": "^7.0.1",
